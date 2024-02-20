@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Newsletter.Api.Database;
 using Newsletter.Api.Shared;
 
-namespace Newsletter.Api.Features.Articles;
+namespace Newsletter.Api.Features.Articles.Commands;
 
 public static class DeleteArticle
 {
-    public class Command: IRequest<Result<Guid>>
+    public class Command : IRequest<Result<Guid>>
     {
         public Guid Id { get; set; }
     }

@@ -1,4 +1,4 @@
-﻿namespace Newsletter.Api.Contract;
+﻿namespace Newsletter.Api.Features.Articles.Contract;
 
 public class CreateArticleRequest
 {
