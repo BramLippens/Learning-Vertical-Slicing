@@ -55,6 +55,7 @@ public static class UpdateArticle
             }
             article.Title = request.Title.IsNullOrEmpty() ? article.Title:request.Title;
             article.Content = request.Content ?? article.Content;
+            article.UpdateOnUtc = DateTime.UtcNow;
 
             _context.Entry(article).State = EntityState.Modified;
             await _context.SaveChangesAsync(cancellationToken);
